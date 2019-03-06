@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+						<div class="item active"
+							style="background: url(images/1.png); background-size: cover;">
+							<img alt="" src="images/1.png" />
+							<div class="carousel-caption">
+								
+								<h4>第一门课</h4>
+								<p>程序设计是给出解决特定问题程序的过程，是软件构造活动中的重要组成部分。程序设计往往以某种程序设计语言为工具，给出这种语言下的程序。</p>
+
+							</div>
+						</div>
+						<div class="item"
+							style="background: url(images/2.png); background-size: cover;">
+							<img alt="" src="images/2.png" />
+							<div class="carousel-caption">
+								<h4>程序设计</h4>
+								<p>
+									程序设计是给出解决特定问题程序的过程，是软件构造活动中的重要组成部分。程序设计往往以某种程序设计语言为工具，给出这种语言下的程序。
+								</p>
+							</div>
+						</div>
+						
+						<div class="item"
+							style="background: url(images/3.png); background-size: cover;">
+							<img alt="" src="images/3.png" />
+							<div class="carousel-caption">
+								<h4>《论语》导读</h4>
+								<p>
+									本课程为复旦经典导读类课程，介绍了儒学产生的历史背景、孔子的生平。通过阅读原文，使学生全面掌握孔子的思想，进而结合现实，讨论儒学的现代意义，激发学生的思考，体悟其精神气韵，培养学生们对传统文化的正确认识。
+								</p>
+							</div>
+						</div>
+						
+						
+						
+						
+						<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="images/4.jpg" />
+						<div class="caption">
+							<h3>化学与人类</h3>
+							<p>
+								化学是一门与人类生活有着密切关系的基础学科。《化学与人类》这门课程分别介绍了化学在人类的生存、发展中的重要地位以及作出的贡献，同时也阐述了化学对于提高人类生活质量所作出的贡献，此外也为听众提供了一些易燃易爆及有毒物质的知识，只有掌握了它们的规律才能防患于未然。本课程旨在使学生对身边发生的化学现象从知其然到知其所以然，并对化学中的一些基本原理和知识有进一步的了解和认识。
+							</p>
+							<p>
+								<a class="btn btn-primary" href="courseDetails.jsp?courseID=1">查看</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="images/5.jpg" />
+						<div class="caption">
+							<h3>哈佛结构</h3>
+							<p>
+								哈佛结构是一种将程序指令存储和数据存储分开的存储器结构，它的主要特点是将程序和数据存储在不同的存储空间中，进行独立编址。</p>
+							<p>
+								<a class="btn btn-primary" href="#">查看</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="images/6.jpg" />
+						<div class="caption">
+							<h3>改进型哈佛结构</h3>
+							<p>改进型的哈佛结构具有一条独立的地址总线和一条独立的数据总线，两条总线由程序存储器和数据存储器分时复用，使结构更紧凑。</p>
+							<p>
+								<a class="btn btn-primary" href="#">查看</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				
+					
+				<div class="panel panel-default">
+					<div class="panel-heading">
+					
+					<h3>发布人</h3>
+						<h4>title</h4>
+						<P>1.
+							有些同学没有使用webviewer，他们在开启自己写的server以后，打开浏览器进行访问时，后端提示连接已经成功了，但是浏览器却出现了“该网页无法正常运作”这样的错误。根据我的理解，我认为出错的原因可能是这样：
+							同学们大多使用的是如同：print（“Welcome”）这种方式来在浏览器显示数据。
+							问题就出在这，浏览器展示的是一个完整的html页面，接收的的数据是socket数据，不是简单的String！所以我们要让浏览器知道，我们给浏览器的是一个完整的“响应体”，于是，我们应该这样print数据：
+							print("HTTP/1.1 200 ok\n Content-Type text/html\n\n" +
+							"Welcome!\n");
+							值得注意的是：上一种出错情况，在某些同学那里可能也能展示。我个人的理解是他们的浏览器比较高级，能够将简单的字符串理解为html页面。
+							关于socket相关的知识，会在大三的“计算机网络结构”这门课里教学，有兴趣的同学可以自己上网找资料。 2.
+							接下来是另一个问题：有些同学使用了webViewer，但是他们的webViewer窗口访问不了网站
+							这个问题我也没什么好的解决办法，似乎只是网速问题？？？毕竟我也试过，有些同学的代码放我这就直接能过了。如果有大神能够解决这个问题，欢迎他在这里为大家解答</P>
+							
+							<form id="replyForm" action="" onsubmit="" method="post" style="display: none;">
+							<textarea class="form-control" name="reply" id="reply" placeholder="请输入回复" required></textarea>
+							<button class="btn btn-primary" type="submit"
+										onClick="checkReply()">确定</button>
+							</form>
+							<div style="text-align: right;">
+							<button class="btn btn-default" onclick="showReply()"><img src="images/reply.png" alt="回复"></button>
+							</div>
+							
+					</div>
+					<div class="panel-heading">
+					<h4>回复人</h4>
+					<p>回复内容</p>
+					</div>
+				
+					
+				</div>
+				
+				
+				
+				<!-- 老师的作业界面demo -->
+					<div class="col-md-4">
+						<div class="thumbnail">
+							<div class="caption">
+								<h3>作业名称</h3>
+								<p>some description about the work</p>
+								
+								<div class="btn-group">
+									<button class="btn btn-info" type="button" data-toggle="modal"
+										data-target="#modifyModal">修改作业</button>
+									<button class="btn btn-danger" type="button"
+										data-toggle="modal" data-target="#deleteModal">删除作业</button>
+									<button class="btn btn-info" type="button" onClick="javascript:window.location.href='/HomeworkScorePageServlet?workName=12'">检查作业</button>
+								</div>
+							</div>
+						</div>
+					</div>
+</body>
+</html>
